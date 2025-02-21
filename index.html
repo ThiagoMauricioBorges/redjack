@@ -9,7 +9,27 @@
     <title>Red Jack</title>
   </head>
   <body>
+    <button class="show-modal">📖</button>
     <main>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>The first player to reach 100 points or more in their total score wins the game.</h1>
+        <h2>How to Play:</h2>
+        <ul>
+          <li>The game is played in turns. On your turn, you roll the dice.</li>
+          <li>The number you roll is added to your current score.</li>
+          <li>After rolling, you have two options:</li>
+          <ul>
+            <li><strong>Roll again:</strong> If you choose to roll again, the new number will be added to your current score.</li>
+            <li><strong>Keep your points:</strong> If you choose to stop, your current score is added to your total score, and your turn ends. The next player takes their turn.</li>
+          </ul>
+          <li><strong>Important Rule:</strong> If you roll a 1, you lose all the points in your current score for that turn, and your turn ends immediately. The next player takes their turn.</li>
+        </ul>
+        <p>Winning the Game: The first player to reach 100 points or more in total score wins the game.</p>
+        <p>Good luck to everyone!</p>
+      </div>
+      <div class="overlay hidden"></div>
+
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
         <p class="score" id="score--0">0</p>
